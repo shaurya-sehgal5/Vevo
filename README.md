@@ -15,7 +15,7 @@ npm run preview
 
 ## Included
 - Responsive desktop and mobile home page, category browsing, product cards, search
-- 20 menswear products, wishlist UI, cart quantity controls, shipping progress and price summary
+- 62 menswear products, wishlist UI, cart quantity controls, shipping progress and price summary
 - Multi-step checkout (delivery details, payment selection, review) and confirmation screen
 - Terms & Conditions, Privacy Policy, and Returns & Refunds policy pages
 - Footer with store address and contact details
@@ -25,7 +25,7 @@ Second Floor, SF-149, Gaur City Center (GCC), Sector 4, Gautam Budh Nagar, Great
 Phone shown in the photo: +91 97623 87360
 
 ## Important before production
-This is a frontend demo. Checkout does not charge a payment method, place a real order, send emails, or store customer data. Connect a backend, verified payment gateway, inventory, shipping provider, and privacy-compliant data handling before launch. Review the starter policies with your actual business practices and applicable law. Product imagery is loaded from Unsplash URLs and requires internet access. Verify image licensing/appropriateness before commercial use.
+This is a frontend demo. Checkout does not charge a payment method, place a real order, send emails, or store customer data. Connect a backend, verified payment gateway, inventory, shipping provider, and privacy-compliant data handling before launch. Review the starter policies with your actual business practices and applicable law. Product illustrations are bundled locally in `public/products`, so catalog images do not depend on third-party hotlinks. The support email `support@vavra.in` is a suggested business contact; configure an inbox and verify domain ownership before launch.
 
 ## Structure
 - `src/main.jsx` — storefront, product data, cart, checkout, policy pages

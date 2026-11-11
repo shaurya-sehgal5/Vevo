@@ -24,216 +24,70 @@ import {
 } from "lucide-react";
 import "./style.css";
 
-const products = [
-  {
-    id: 1,
-    name: "Essential Heavyweight Tee",
-    category: "T-Shirts",
-    price: 899,
-    old: 1299,
-    color: "Onyx",
-    image: "photo-152 garment".replace(" garment", ""),
-  },
-  {
-    id: 2,
-    name: "Relaxed Fit Crew Tee",
-    category: "T-Shirts",
-    price: 999,
-    old: 1499,
-    color: "Bone",
-    image: "photo-1521572163474-6864f9cf17ab",
-  },
-  {
-    id: 3,
-    name: "Studio Oversized Hoodie",
-    category: "Hoodies",
-    price: 2199,
-    old: 2799,
-    color: "Black",
-    image: "photo-1556821840-3a63f95609a7",
-  },
-  {
-    id: 4,
-    name: "Everyday Zip Hoodie",
-    category: "Hoodies",
-    price: 2499,
-    old: 3299,
-    color: "Stone",
-    image: "photo-1556821840-3a63f95609a7",
-  },
-  {
-    id: 5,
-    name: "Utility Overshirt",
-    category: "Shirts",
-    price: 1999,
-    old: 2599,
-    color: "Olive",
-    image: "photo-1598032895397-b9472444bf93",
-  },
-  {
-    id: 6,
-    name: "Oxford Button-Down",
-    category: "Shirts",
-    price: 1799,
-    old: 2299,
-    color: "Cloud",
-    image: "photo-1598032895397-b9472444bf93",
-  },
-  {
-    id: 7,
-    name: "Everyday Cargo Pant",
-    category: "Cargo",
-    price: 2499,
-    old: 3199,
-    color: "Black",
-    image: "photo-1542272604-787c3835535d",
-  },
-  {
-    id: 8,
-    name: "Relaxed Denim",
-    category: "Jeans",
-    price: 2299,
-    old: 2999,
-    color: "Indigo",
-    image: "photo-1542272604-787c3835535d",
-  },
-  {
-    id: 9,
-    name: "Straight Fit Denim",
-    category: "Jeans",
-    price: 2399,
-    old: 3199,
-    color: "Washed Blue",
-    image: "photo-1542272604-787c3835535d",
-  },
-  {
-    id: 10,
-    name: "Tapered Joggers",
-    category: "Joggers",
-    price: 1699,
-    old: 2199,
-    color: "Charcoal",
-    image: "photo-1552902865-b72c031ac5ea",
-  },
-  {
-    id: 11,
-    name: "Track Pant 02",
-    category: "Joggers",
-    price: 1899,
-    old: 2499,
-    color: "Black",
-    image: "photo-1552902865-b72c031ac5ea",
-  },
-  {
-    id: 12,
-    name: "Minimal Bomber",
-    category: "Jackets",
-    price: 3299,
-    old: 4299,
-    color: "Forest",
-    image: "photo-1551028719-00167b16eac5",
-  },
-  {
-    id: 13,
-    name: "Everyday Coach Jacket",
-    category: "Jackets",
-    price: 2999,
-    old: 3999,
-    color: "Black",
-    image: "photo-1551028719-00167b16eac5",
-  },
-  {
-    id: 14,
-    name: "Linen Blend Shirt",
-    category: "Shirts",
-    price: 1899,
-    old: 2499,
-    color: "Sand",
-    image: "photo-1598032895397-b9472444bf93",
-  },
-  {
-    id: 15,
-    name: "Premium Polo",
-    category: "T-Shirts",
-    price: 1299,
-    old: 1799,
-    color: "Cream",
-    image: "photo-1521572163474-6864f9cf17ab",
-  },
-  {
-    id: 16,
-    name: "Ribbed Tank",
-    category: "T-Shirts",
-    price: 699,
-    old: 999,
-    color: "White",
-    image: "photo-1521572163474-6864f9cf17ab",
-  },
-  {
-    id: 17,
-    name: "Cargo Shorts",
-    category: "Shorts",
-    price: 1499,
-    old: 1999,
-    color: "Olive",
-    image: "photo-1542272604-787c3835535d",
-  },
-  {
-    id: 18,
-    name: "Weekend Shorts",
-    category: "Shorts",
-    price: 1199,
-    old: 1599,
-    color: "Black",
-    image: "photo-1542272604-787c3835535d",
-  },
-  {
-    id: 19,
-    name: "Co-ord Sweatshirt",
-    category: "Hoodies",
-    price: 2299,
-    old: 2999,
-    color: "Grey",
-    image: "photo-1556821840-3a63f95609a7",
-  },
-  {
-    id: 20,
-    name: "Signature Cap",
-    category: "Accessories",
-    price: 699,
-    old: 999,
-    color: "Black",
-    image: "photo-1588850561407-ed78c282e89b",
-  },
+const catalog = [
+  { id: 1, name: "Essential Heavyweight Tee", category: "T-Shirts", price: 899, old: 1150, color: "Onyx", image: "https://image.made-in-china.com/318f0j00WtwRmMfFyvbJ/1-30-2-2-mp4.webp" },
+  { id: 2, name: "Relaxed Fit Crew Tee", category: "T-Shirts", price: 999, old: 1300, color: "Bone", image: "https://down-id.img.susercontent.com/file/id-11134207-7r98q-lwgnjqjmx725ec" },
+  { id: 3, name: "Studio Oversized Hoodie", category: "Hoodies", price: 1899, old: 2450, color: "Black", image: "https://royasports.com/pictures/products/385188520_40_pic_3.jpg" },
+  { id: 4, name: "Everyday Zip Hoodie", category: "Hoodies", price: 1999, old: 2499, color: "Stone", image: "https://cdn11.bigcommerce.com/s-bwiuyvxp9w/images/stencil/1280x1280/products/122/1467/mens-classicfit-zipfronthoody-sweatshirt-brown_419ce09f-57e1-4181-9c21-0408d888cf85__42831.1757109522.jpg?c=1" },
+  { id: 5, name: "Utility Overshirt", category: "Shirts", price: 1799, old: 2300, color: "Olive", image: "https://api.olymp.com/medias/85211401-model-pv-main.jpeg-olymp-706x700?context=bWFzdGVyfGltYWdlc3wzODE4NXxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJnMU5pOW9PRE12TVRBMU1UQTBPRGd6TXpnME5qSXVhbkJufDIwNjJmOWY1NDZkZDE1OGQ0MjJjMTQ0ZGE0OTY5MTJkZjcwNzY3ZWY5NmZmNzM0MTg4NzQ2YjZkMjE4YzBlMDg" },
+  { id: 6, name: "Oxford Button-Down", category: "Shirts", price: 1699, old: 2150, color: "Cloud", image: "https://leftcoasttee.com/cdn/shop/files/LEFT-COAST-TEE_LONDON-OVERSHIRT-12-1_ALL-RIGHTS-RESERVED.jpg?v=1771825960&width=1500" },
+  { id: 7, name: "Everyday Cargo Pant", category: "Cargo", price: 1999, old: 2499, color: "Black", image: "/product-images/everyday-cargo-pant.webp" },
+  { id: 8, name: "Relaxed Denim", category: "Jeans", price: 1899, old: 2450, color: "Indigo", image: "https://www.buffalojeans.com/cdn/shop/files/BM20606-470-04_1024x.jpg?v=1753461297" },
+  { id: 9, name: "Straight Fit Denim", category: "Jeans", price: 1999, old: 2499, color: "Washed Blue", image: "https://static.bergzeit.com/product_gallery_regular/1141949-001_pic5.jpg" },
+  { id: 10, name: "Tapered Joggers", category: "Joggers", price: 1499, old: 1900, color: "Charcoal", image: "https://images.tcdn.com.br/img/img_prod/740108/calma_masculina_de_moletom_com_punhos_verde_militar_2563_5_f63096c09dc6d3a51dcf8af48c05aec0.jpg" },
+  { id: 11, name: "Track Pant 02", category: "Joggers", price: 1599, old: 2050, color: "Black", image: "https://cdn.shoplightspeed.com/shops/636544/files/37284250/image.jpg" },
+  { id: 12, name: "Minimal Bomber", category: "Jackets", price: 1999, old: 2499, color: "Forest", image: "https://i.ebayimg.com/images/g/oFQAAOSwUrlbXMZ1/s-l1200.jpg" },
+  { id: 13, name: "Everyday Coach Jacket", category: "Jackets", price: 1899, old: 2450, color: "Black", image: "https://www.nationalhandloomcorp.com/cdn/shop/files/MENS-CASUALJACKET.png?v=1775303749" },
+  { id: 14, name: "Linen Blend Shirt", category: "Shirts", price: 1799, old: 2300, color: "Sand", image: "https://www.peggsandson.com/cdn/shop/files/1K3C3304_e4708f42-298a-48ef-86a3-d21192eb028c.jpg?v=1773145489&width=2048" },
+  { id: 15, name: "Premium Polo", category: "T-Shirts", price: 1299, old: 1650, color: "Cream", image: "https://kartmax-product-live-bucket.s3.ap-south-1.amazonaws.com/public/wink/images/AO1SxEjKvBoPo1urBh7GE8CSc1Ee4SbE2ICbyFAP.jpg" },
+  { id: 16, name: "Ribbed Tank", category: "T-Shirts", price: 699, old: 949, color: "White", image: "https://pub-95ccf2d427eb4955a7de1c41d3fa57dd.r2.dev/blog-g3fashion-com/2022/01/black-t-shirt-1024x1024.jpg" },
+  { id: 17, name: "Cargo Shorts", category: "Shorts", price: 1199, old: 1550, color: "Olive", image: "https://imgix.bustle.com/uploads/image/2021/7/28/cb2d786a-17d4-4254-ad3d-04a7c657a6a4-best-shorts-hot-weather.jpg?crop=faces&fit=crop&fm=jpg&h=630&w=1200" },
+  { id: 18, name: "Weekend Shorts", category: "Shorts", price: 999, old: 1300, color: "Black", image: "https://i5.walmartimages.com/seo/BiZtdJrK-Mens-Cargo-Jean-Shorts-Solid-Color-Vintage-Denim-Shorts-Loose-Wide-Leg-Casual-Multi-Pocket-Short-Pants-Light-Blue-S_cecc0639-27c6-4abb-89e0-e16492728f13.217f7eac6e4a99d5c27e0e057003ae17.jpeg?odnBg=FFFFFF&odnHeight=573&odnWidth=573" },
+  { id: 19, name: "Co-ord Sweatshirt", category: "Hoodies", price: 1799, old: 2300, color: "Grey", image: "https://tallslimtees.com/cdn/shop/files/RedZipUpWeb.jpg?v=1744386897&width=1080" },
+  { id: 20, name: "Signature Cap", category: "Accessories", price: 699, old: 949, color: "Black", image: "https://cdn.011st.com/11dims/resize/1000x1000/quality/75/11src/opt/3/6/5/0/2/8/1901365028/nSTpY/25759089245_B.jpg" },
+  { id: 21, name: "Classic Crewneck Tee", category: "T-Shirts", price: 799, old: 1049, color: "White", image: "https://static.wixstatic.com/media/d34c72_2b78cae895c84aca86d7effca64207de~mv2.png/v1/fill/w_980%2Ch_653%2Cal_c%2Cq_90%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/d34c72_2b78cae895c84aca86d7effca64207de~mv2.png" },
+  { id: 22, name: "Boxy Essential Tee", category: "T-Shirts", price: 1099, old: 1400, color: "Slate", image: "/product-images/boxy-essential-tee.webp" },
+  { id: 23, name: "Striped Cotton Tee", category: "T-Shirts", price: 899, old: 1150, color: "Navy", image: "https://image.spreadshirtmedia.net/image-server/v1/productTypes/963/views/1/appearances/320%2Cwidth%3D650%2Cheight%3D800%2CbackgroundColor%3Df2f2f2%2CmodelId%3D10749%2Ccrop%3Ddetail.png" },
+  { id: 24, name: "Longline Basic Tee", category: "T-Shirts", price: 749, old: 999, color: "Moss", image: "https://www.nimbus-b2b.com/cdn/shop/files/danbury_men_navy_front_1200x.jpg?v=1770225422" },
+  { id: 25, name: "Pique Polo Shirt", category: "T-Shirts", price: 1399, old: 1800, color: "Navy", image: "https://img-lcwaikiki.mncdn.com/mnpadding/480/640/ffffff/pim/productimages/20261/8510808/v1/l_20261-s69236z8-hzz_u.jpg" },
+  { id: 26, name: "French Terry Hoodie", category: "Hoodies", price: 1899, old: 2450, color: "Ash", image: "https://www.stokomani.fr/cdn/shop/files/optimized_68e1be519fd35_2025-10-05_00-39-45.jpg?v=1759624788" },
+  { id: 27, name: "Minimal Pullover Hoodie", category: "Hoodies", price: 1799, old: 2300, color: "Oat", image: "https://www.drleonards.com/dw/image/v2/BBVM_PRD/on/demandware.static/-/Sites-colony-master-catalog/default/dw2ac9b4f3/DIS/SP26_HA_6326091_12729_WP001.png?sh=1500&sm=fit&sw=1500" },
+  { id: 28, name: "Zip-Up Fleece Hoodie", category: "Hoodies", price: 1999, old: 2499, color: "Charcoal", image: "https://stancolor.su/thumb/2/d-0LsA1OxuAPMZ_AvcZWAQ/r/d/18_131_1.png" },
+  { id: 29, name: "Textured Knit Shirt", category: "Shirts", price: 1699, old: 2150, color: "Ecru", image: "https://www.careofcarl.nl/bilder/artiklar/600x600_grey_4_5/31313011r.jpg" },
+  { id: 30, name: "Casual Check Shirt", category: "Shirts", price: 1599, old: 2050, color: "Blue", image: "https://www.oliversweeney.com/cdn/shop/files/rauceby-mid-blue-sq2_1200x1200.jpg?v=1747152372" },
+  { id: 31, name: "Mandarin Collar Shirt", category: "Shirts", price: 1499, old: 1900, color: "White", image: "https://twothirds.com/cdn/shop/files/walpole-camel-toast-868405_1200x1200.jpg?v=1731149421" },
+  { id: 32, name: "Relaxed Linen Shirt", category: "Shirts", price: 1899, old: 2450, color: "Sage", image: "https://www.oliversweeney.com/cdn/shop/files/MicrosoftTeams-image_29.jpg?v=1761294613" },
+  { id: 33, name: "Slim Taper Jeans", category: "Jeans", price: 1999, old: 2499, color: "Indigo", image: "https://image.hm.com/assets/hm/3b/98/3b9866665977c9bbda42f3f0048717b3392d0da5.jpg?imwidth=2160" },
+  { id: 34, name: "Washed Denim Jeans", category: "Jeans", price: 1899, old: 2450, color: "Blue", image: "https://image.hm.com/assets/hm/ac/60/ac60e9909215ce2e1dbc165c08cae520320762a2.jpg" },
+  { id: 35, name: "Classic Black Jeans", category: "Jeans", price: 1999, old: 2499, color: "Black", image: "https://www.trueclassictees.com/cdn/shop/files/4711_MEDIUMINDIGOWASH_1_5dc5036e-89d2-4172-a998-aa7a9ba8e811.jpg?v=1747836825&width=1420" },
+  { id: 36, name: "Utility Cargo Trousers", category: "Cargo", price: 1899, old: 2450, color: "Khaki", image: "https://i5.walmartimages.com/seo/Timoontee-Pants-Mens-Cargo-Jogger-Pants-Elastic-Drawstring-Waist-Zipper-Thigh-Pockets-Tapered-Ankle-Cuffs-Casual-Work-Trousers-Daily-Outdoor-Street-B_645648fe-498d-4f85-ad73-9baf8b939b0e.c7a89240c727925d9766d744a1ff5263.jpeg" },
+  { id: 37, name: "Tapered Cargo Pants", category: "Cargo", price: 1799, old: 2300, color: "Olive", image: "https://i5.walmartimages.com/seo/BELTNOV-Men-s-Lightweight-Cargo-Joggers-Soft-Poly-Gabardine-Track-Pants-with-Pockets-Elastic-Waist-Athletic-Sweatpants-for-Gym-Hiking-Casual-Khaki_f9c92dfc-6436-4016-b053-c7403ff47a37.2aaf115e5523ed1c677bd6769d4b11e0.jpeg" },
+  { id: 38, name: "Everyday Cotton Joggers", category: "Joggers", price: 1299, old: 1650, color: "Grey", image: "/product-images/everyday-cotton-joggers.webp" },
+  { id: 39, name: "Relaxed Lounge Joggers", category: "Joggers", price: 1199, old: 1550, color: "Black", image: "https://stormtechaustralia.com.au/cdn/shop/products/image_2_f8a925b4-084d-445c-b2a0-f8ed5c7df5cd.jpg?v=1631749481&width=640" },
+  { id: 40, name: "Performance Track Pants", category: "Joggers", price: 1499, old: 1900, color: "Navy", image: "https://i5.walmartimages.com/seo/Men-s-Solid-Color-Athletic-Jogger-Pants-Drawstring-Waist-Cuffed-Ankle-Sports-Sweatpants-Casual-Comfortable-Street-Style-Trousers-Dark-Gray-L_b1afe9eb-38d7-4127-b537-5c42ff648346.346a85f41861f0180e1d855497e6c468.jpeg" },
+  { id: 41, name: "Lightweight Windcheater", category: "Jackets", price: 1999, old: 2499, color: "Stone", image: "https://www.wearstylecorner.com/images/generated/where-to-buy-mens-casual-fall-jackets-trusted-stores-reviewed.png" },
+  { id: 42, name: "Utility Zip Jacket", category: "Jackets", price: 1999, old: 2499, color: "Olive", image: "https://bizweb.dktcdn.net/100/399/392/files/coach-jacket.jpg?v=1671217919160" },
+  { id: 43, name: "Denim Trucker Jacket", category: "Jackets", price: 1999, old: 2499, color: "Blue", image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=1000&q=90" },
+  { id: 44, name: "Canvas Coach Jacket", category: "Jackets", price: 1899, old: 2450, color: "Tan", image: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=1000&q=90" },
+  { id: 45, name: "Relaxed Chino Shorts", category: "Shorts", price: 1099, old: 1400, color: "Sand", image: "https://down-id.img.susercontent.com/file/id-11134207-8224w-mk91kcz557up9a" },
+  { id: 46, name: "Cotton Drawstring Shorts", category: "Shorts", price: 899, old: 1150, color: "Grey", image: "https://i.ebayimg.com/images/g/gS0AAOSwfSxguPR3/s-l1200.jpg" },
+  { id: 47, name: "Utility Pocket Shorts", category: "Shorts", price: 1299, old: 1650, color: "Khaki", image: "https://avenue85.co.uk/cdn/shop/files/rmj221-0323joint3_1200x1200.jpg?v=1707399151" },
+  { id: 48, name: "Everyday Baseball Cap", category: "Accessories", price: 599, old: 849, color: "Navy", image: "https://i5.walmartimages.com/dfw/4ff9c6c9-babe/k2-_b7775cf7-b3f0-4c10-a08f-9d7e2dc3750d.v1.webp" },
+  { id: 49, name: "Minimal Canvas Tote", category: "Accessories", price: 799, old: 1049, color: "Natural", image: "https://cdn11.bigcommerce.com/s-xhsipki9fu/images/stencil/original/products/2381/66614/AW22.Grey.1__16067.1679303571.jpg" },
+  { id: 50, name: "Classic Leather-Style Wallet", category: "Accessories", price: 899, old: 1150, color: "Brown", image: "https://i5.walmartimages.com/seo/BROSHOPP-Men-s-Full-Grain-Leather-Bifold-Wallet-with-RFID-Blocking-9-Card-Slots-ID-Window-Black_8f3a1a05-1b2c-492a-a5a9-0c1125807dc7.e9081d448eb1e6b349719c2b1ff3b2bb.jpeg" },
+  { id: 51, name: "Compact Card Holder", category: "Accessories", price: 699, old: 949, color: "Black", image: "/product-images/compact-card-holder.webp" },
+  { id: 52, name: "Everyday Crew Socks - 3 Pack", category: "Socks", price: 549, old: 799, color: "White", image: "/product-images/everyday-crew-socks-3-pack.webp" },
+  { id: 53, name: "Ribbed Beanie", category: "Accessories", price: 699, old: 949, color: "Charcoal", image: "https://images.unsplash.com/photo-1521369909029-2afed882baee?auto=format&fit=crop&w=900&q=85" },
+  { id: 54, name: "Minimal Crossbody Bag", category: "Accessories", price: 1499, old: 1900, color: "Black", image: "/product-images/minimal-crossbody-bag.webp" },
+  { id: 55, name: "Canvas Low-Top Sneakers", category: "Footwear", price: 1999, old: 2499, color: "White", image: "https://modagoods.com/cdn/shop/files/53-yh-063233-GRN-PAIR_15.png?v=1748552985&width=1946" },
+  { id: 56, name: "Classic Slide Sandals", category: "Footwear", price: 999, old: 1300, color: "Black", image: "/product-images/classic-slide-sandals.webp" },
+  { id: 57, name: "Textured Knit Polo", category: "T-Shirts", price: 1499, old: 1900, color: "Espresso", image: "https://mensbestbasics.com/cdn/shop/files/Frame39.png?v=1726880617" },
+  { id: 58, name: "Raglan Sleeve Tee", category: "T-Shirts", price: 899, old: 1150, color: "Grey", image: "https://www.houseofblanks.com/cdn/shop/files/26.06.17_White-TShirt_01.jpg?v=1782140204&width=1445" },
+  { id: 59, name: "Waffle Knit Sweatshirt", category: "Hoodies", price: 1799, old: 2300, color: "Cream", image: "https://cdn11.bigcommerce.com/s-rxzabllq/product_images/attribute_rule_images/19951882_source_1744734069.jpg" },
+  { id: 60, name: "Flannel Overshirt", category: "Shirts", price: 1899, old: 2450, color: "Rust", image: "https://onia.com/cdn/shop/files/ONIA-SP25-M-ECOMM16890.jpg?v=1758756560" },
+  { id: 61, name: "Pleated Relaxed Trousers", category: "Trousers", price: 1799, old: 2300, color: "Stone", image: "https://image.hm.com/assets/hm/7e/66/7e66e02b0b62868649722ba948c5ecd1718afbcd.jpg" },
+  { id: 62, name: "Everyday Denim Shorts", category: "Shorts", price: 1199, old: 1550, color: "Indigo", image: "https://spaziouomotaglieforti.it/cdn/shop/collections/bermudacovcat.jpg?v=1758113225" }
 ];
-// Use curated Unsplash source photo IDs for reliable image URLs.
-const images = [
-  "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=85",
-  "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=900&q=85",
-  "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=900&q=85",
-  "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=900&q=85",
-  "https://images.unsplash.com/photo-1598032895397-b9472444bf93?auto=format&fit=crop&w=900&q=85",
-  "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=900&q=85",
-  "https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=900&q=85",
-  "https://images.unsplash.com/photo-1552902865-b72c031ac5ea?auto=format&fit=crop&w=900&q=85",
-  "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=900&q=85",
-  "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=85",
-  "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=85",
-  "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=85",
-  "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=900&q=85",
-  "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=900&q=85",
-  "https://images.unsplash.com/photo-152550 данным?auto=format&fit=crop&w=900&q=85",
-  "https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=900&q=85",
-  "https://images.unsplash.com/photo-1506629905607-d9c297d8c4e7?auto=format&fit=crop&w=900&q=85",
-  "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=85",
-  "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=900&q=85",
-  "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=900&q=85",
-];
-
-const catalog = products.map((p, i) => ({
-  ...p,
-  image: images[i],
-}));
 const money = (n) => "₹" + n.toLocaleString("en-IN");
 function App() {
   const [cart, setCart] = useState([]),
@@ -302,6 +156,9 @@ function App() {
     "Jackets",
     "Shorts",
     "Accessories",
+    "Footwear",
+    "Trousers",
+    "Socks",
   ];
   return (
     <div className="app">
@@ -686,7 +543,7 @@ function App() {
                   </div>
                   {cart.map((p) => (
                     <div className="cart-item" key={p.id}>
-                      <img src={p.image} alt={p.name} />
+                      <img src={p.image} alt={p.name} {...safeProductImage(p)} />
                       <div className="cart-item-info">
                         <span className="eyebrow">{p.category}</span>
                         <h3>{p.name}</h3>
@@ -1049,6 +906,7 @@ function App() {
                 <br />
                 Uttar Pradesh 201318, India
               </p>
+              <a href="mailto:support@vavra.in">support@vavra.in</a>
               <a href="tel:9762387360">+91 97623 87360</a>
             </div>
           </div>
@@ -1067,13 +925,29 @@ function App() {
     </div>
   );
 }
+
+const categoryImageFallbacks = {"T-Shirts": ["https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1000&q=90"], "Hoodies": ["https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=1000&q=90"], "Shirts": ["https://images.unsplash.com/photo-1598032895397-b9472444bf93?auto=format&fit=crop&w=1000&q=90"], "Jeans": ["https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=1000&q=90"], "Cargo": ["https://images.unsplash.com/photo-1506629905607-d9c297d8c4e7?auto=format&fit=crop&w=1000&q=90"], "Joggers": ["https://images.unsplash.com/photo-1506629905607-d9c297d8c4e7?auto=format&fit=crop&w=1000&q=90"], "Jackets": ["https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=1000&q=90"], "Shorts": ["https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=1000&q=90"], "Accessories": ["https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=1000&q=90"], "Footwear": ["https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1000&q=90"], "Trousers": ["https://images.unsplash.com/photo-1506629905607-d9c297d8c4e7?auto=format&fit=crop&w=1000&q=90"]};
+const safeProductImage = (product) => {
+  const fallbacks = categoryImageFallbacks[product.category] || [];
+  let attempt = 0;
+  return {
+    onError: (event) => {
+      if (attempt >= fallbacks.length) {
+        event.currentTarget.onerror = null;
+        return;
+      }
+      event.currentTarget.src = fallbacks[attempt++];
+    }
+  };
+};
+
 function ProductGrid({ list, add, saved, toggleSave }) {
   return (
     <div className="product-grid">
       {list.map((p, i) => (
         <article className="product-card" key={p.id}>
           <div className="product-image">
-            <img loading="lazy" src={p.image} alt={p.name} />
+            <img loading="lazy" decoding="async" src={p.image} alt={p.name} {...safeProductImage(p)} />
             <span className="product-badge">
               {i % 3 === 0
                 ? "BESTSELLER"
@@ -1162,6 +1036,7 @@ function Policy({ page }) {
           Second Floor, SF-149, Gaur City Center (GCC), Sector 4, Gautam Budh
           Nagar, Greater Noida, Uttar Pradesh 201318, India
         </p>
+        <p>Email: support@vavra.in</p>
         <p>Phone: +91 97623 87360</p>
       </div>
     </section>

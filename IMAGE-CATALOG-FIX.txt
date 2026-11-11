@@ -1,0 +1,7 @@
+VAVRA image/catalog corrections
+- Replaced the duplicated-looking Denim Trucker Jacket and Canvas Coach Jacket assignments with separate jacket photos.
+- Reassigned the three jogger/track-pant images to distinct product photos.
+- Renamed Boxy Graphic Tee to Boxy Essential Tee because its selected image is a plain tee, not a graphic print.
+- Added category-specific image fallback handling for failed remote image requests.
+- Preserved all 62 products, pricing, cart/checkout logic, layout and styling.
+- All 62 primary image URLs are unique. Images are remotely hosted; the source hosts must permit hotlinking.
